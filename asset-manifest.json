@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cyberpunkcapital/static/css/main.3898218f.chunk.css",
-    "main.js": "/cyberpunkcapital/static/js/main.5bcfcc73.chunk.js",
-    "main.js.map": "/cyberpunkcapital/static/js/main.5bcfcc73.chunk.js.map",
+    "main.js": "/cyberpunkcapital/static/js/main.8a7fb4a6.chunk.js",
+    "main.js.map": "/cyberpunkcapital/static/js/main.8a7fb4a6.chunk.js.map",
     "runtime-main.js": "/cyberpunkcapital/static/js/runtime-main.56799db6.js",
     "runtime-main.js.map": "/cyberpunkcapital/static/js/runtime-main.56799db6.js.map",
     "static/js/2.8d4fc189.chunk.js": "/cyberpunkcapital/static/js/2.8d4fc189.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.56799db6.js",
     "static/js/2.8d4fc189.chunk.js",
     "static/css/main.3898218f.chunk.css",
-    "static/js/main.5bcfcc73.chunk.js"
+    "static/js/main.8a7fb4a6.chunk.js"
   ]
 }

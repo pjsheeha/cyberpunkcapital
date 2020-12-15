@@ -144,14 +144,15 @@ a{
             left:0;
             right:0;
             top:-1px;
+            display:flex;
           }
 
             .l-footer--flat{
-              border-top:1px solid #bfb506;margin-top:200px;background-color: black;
+              border-top:1px solid #bfb506;margin-top:200px;background-color: black;display:flex;
             }
           @media screen and (max-width:767px){
             .l-footer--flat.l-footer{
-              margin-top:0}
+              margin-top:0;display:flex;}
             }
             .l-footer--flat.l-footer:before{
               content:none

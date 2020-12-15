@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/cyberpunkcapital/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/cyberpunkcapital/static/js/main.4fe985e0.chunk.js",
-    "main.js.map": "/cyberpunkcapital/static/js/main.4fe985e0.chunk.js.map",
-    "runtime-main.js": "/cyberpunkcapital/static/js/runtime-main.3819457b.js",
-    "runtime-main.js.map": "/cyberpunkcapital/static/js/runtime-main.3819457b.js.map",
-    "static/js/2.19c99f37.chunk.js": "/cyberpunkcapital/static/js/2.19c99f37.chunk.js",
-    "static/js/2.19c99f37.chunk.js.map": "/cyberpunkcapital/static/js/2.19c99f37.chunk.js.map",
-    "static/js/3.7be4691a.chunk.js": "/cyberpunkcapital/static/js/3.7be4691a.chunk.js",
-    "static/js/3.7be4691a.chunk.js.map": "/cyberpunkcapital/static/js/3.7be4691a.chunk.js.map",
+    "main.css": "/cyberpunkcapital/static/css/main.bca47e00.chunk.css",
+    "main.js": "/cyberpunkcapital/static/js/main.5bcfcc73.chunk.js",
+    "main.js.map": "/cyberpunkcapital/static/js/main.5bcfcc73.chunk.js.map",
+    "runtime-main.js": "/cyberpunkcapital/static/js/runtime-main.56799db6.js",
+    "runtime-main.js.map": "/cyberpunkcapital/static/js/runtime-main.56799db6.js.map",
+    "static/js/2.8d4fc189.chunk.js": "/cyberpunkcapital/static/js/2.8d4fc189.chunk.js",
+    "static/js/2.8d4fc189.chunk.js.map": "/cyberpunkcapital/static/js/2.8d4fc189.chunk.js.map",
+    "static/js/3.812c39c7.chunk.js": "/cyberpunkcapital/static/js/3.812c39c7.chunk.js",
+    "static/js/3.812c39c7.chunk.js.map": "/cyberpunkcapital/static/js/3.812c39c7.chunk.js.map",
     "index.html": "/cyberpunkcapital/index.html",
-    "static/css/main.ab7136cd.chunk.css.map": "/cyberpunkcapital/static/css/main.ab7136cd.chunk.css.map",
-    "static/js/2.19c99f37.chunk.js.LICENSE.txt": "/cyberpunkcapital/static/js/2.19c99f37.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/cyberpunkcapital/static/media/logo.6ce24c58.svg"
+    "static/css/main.bca47e00.chunk.css.map": "/cyberpunkcapital/static/css/main.bca47e00.chunk.css.map",
+    "static/js/2.8d4fc189.chunk.js.LICENSE.txt": "/cyberpunkcapital/static/js/2.8d4fc189.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/cyberpunkcapital/static/media/twitter.37e2655f.svg",
+    "static/media/logo.b4c1e8e5.png": "/cyberpunkcapital/static/media/logo.b4c1e8e5.png",
+    "static/media/moon.985df03d.png": "/cyberpunkcapital/static/media/moon.985df03d.png",
+    "static/media/sun.8942bff3.png": "/cyberpunkcapital/static/media/sun.8942bff3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3819457b.js",
-    "static/js/2.19c99f37.chunk.js",
-    "static/css/main.ab7136cd.chunk.css",
-    "static/js/main.4fe985e0.chunk.js"
+    "static/js/runtime-main.56799db6.js",
+    "static/js/2.8d4fc189.chunk.js",
+    "static/css/main.bca47e00.chunk.css",
+    "static/js/main.5bcfcc73.chunk.js"
   ]
 }

@@ -1,4 +1,5 @@
 import logo from './images/logo.png';
+import logo2 from './images/logo2.png';
 
 import './App.css';
 import React, {useState,useRef, useEffect} from 'react';
@@ -7,12 +8,14 @@ import SwitchExample from './Switch';
 function App() {
   const [elem, setElem]= useState(0);
   const chapters = sections.sections;
+  const [darkMode, setdarkMode] = useState(false);
   const [isSticky, setSticky] = useState(false);
   const ref = useRef(null);
   const handleScroll = () => {
     if (ref.current) {
       setSticky(ref.current.getBoundingClientRect().top <= 0);
     }
+
   };
 
   useEffect(() => {
@@ -20,17 +23,24 @@ function App() {
 
     return () => {
       window.removeEventListener('scroll', () => handleScroll);
+      
+
     };
   }, []);
+  function changeDarkMode(){
+    setdarkMode(!darkMode);
+    console.log(darkMode);
+
+  }
   return (
     <div>
       <div className={`sticky-wrapper${isSticky ? ' sticky' : ''}`} ref={ref}>
 
-        <div ><ul className="sticky-inner"><li><SwitchExample color={'#777214'}/></li><li>{chapters[elem][0].title}</li><li><a href="#chapters" class="grey">Select a Chapter</a></li></ul></div>
+        <div ><ul className="sticky-inner"><li><SwitchExample onChange={()=>{changeDarkMode()}} color={'#777214'}/></li><li>{chapters[elem][0].title}</li><li><a href="#chapters" class="grey">Select a Chapter</a></li></ul></div>
   
 </div>
     <section className="ua__content">
-        <img src={logo} className="App-logo" alt="Cyberpunk Capital V.1" />
+        <img src={darkMode?logo2:logo} className="App-logo" alt="Cyberpunk Capital V.1" />
 
       <div className="wrapper">
       <h1>CYBERPUNK 2077 – END USER LICENCE AGREEMENT</h1>
@@ -56,19 +66,19 @@ function App() {
             {chapters[elem+1]?(  <button onClick={()=>{setElem(elem+1)}} className="l-footer_button-present" ><span>Next Chapter →</span></button>):(<span className="faded-yellow">More coming soon!</span>)}
             </li>
           </ul>
-          <li className="l-footer__logos" id ="chapters">
+          <ul className="l-footer__logos" id ="chapters">
           
-          {chapters.map((chapter,index)=><ul><button className ="l-footer_button-present"onClick={()=>{setElem(index)}}><h2 className={elem === index?'faded-yellow':'yellow'}>{chapter[0].title}</h2></button></ul>)}
-          </li>
-          <li className="l-footer__logos">
-            <ul><a className = "yellow" target="_blank"href="https://paypal.me/pools/c/8vbGkmm37Q">Send a Tip!</a></ul>
-            <ul><a className = "yellow" target="_blank"href="https://perebite.com/">My other stuff</a></ul>
-            <ul><a className = "yellow" target="_blank"href="https://www.instagram.com/cyberpunk.capital/">Instagram page: @cyberpunk.capital</a></ul>
-            <ul><a className = "yellow" target="_blank"href="https://www.marxists.org/archive/index.htm">marxists.org</a></ul>
+          {chapters.map((chapter,index)=><li><button className ="l-footer_button-present"onClick={()=>{setElem(index)}}><h2 className={elem === index?'faded-yellow':'yellow'}>{chapter[0].title}</h2></button></li>)}
+          </ul>
+          <ul className="l-footer__links">
+            <li><a className = "yellow" target="_blank"href="https://paypal.me/pools/c/8vbGkmm37Q">send a tip!</a></li>
+            <li><a className = "yellow" target="_blank"href="https://perebite.com/">my other stuff</a></li>
+            <li><a className = "yellow" target="_blank"href="https://www.instagram.com/cyberpunk.capital/">insta: @cyberpunk.capital</a></li>
+            <li><a className = "yellow" target="_blank"href="https://www.marxists.org/archive/index.htm">marxists.org</a></li>
 
 
 
-          </li>
+          </ul>
         </div>
         <div>
 

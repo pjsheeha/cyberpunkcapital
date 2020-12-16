@@ -1,28 +1,27 @@
-import React, { Component } from "react";
-import Switch from "react-switch";
-import sun from "./images/sun.png";
-import moon from "./images/moon.png";
+import React, { useState } from "react";
+import Switch  from "react-switch";
+
 import './App.css';
 
-class SwitchExample extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { checked: false,onColor:'#777214',height:18, width:36 };
-    this.handleChange = this.handleChange.bind(this);
+const SwitchExample = (props) =>{
+  const [checked,setChecked]=  useState(false);
+  const [onColor,setColor] = useState('#777214');
+  const [height,setHeight] = useState(18);
+  const [width,setWidth] =  useState(36);
 
-  }
+  
  
-  handleChange(checked) {
-    this.setState({ checked });
+  function handleChange() {
+    setChecked( !checked );
   }
 
-  render() {
+
     return (
       <label>
-        <Switch uncheckedIcon ={<div><span className = "icon">&nbsp;☽</span></div>}checkedIcon={<div><span className = "icon">&nbsp;☀</span></div>} onChange={this.handleChange} checked={this.state.checked} onColor={this.state.onColor}width={this.state.width} height={this.state.height}/>
+        <Switch  uncheckedIcon ={<div><span className = "icon">&nbsp;☽</span></div>}checkedIcon={<div><span className = "icon">&nbsp;☀</span></div>} onChange={()=>{handleChange();props.onChange();}} checked={checked} onColor={props.color}width={width} height={height}/>
       </label>
     );
-  }
+  
 }
 
 export default SwitchExample;

@@ -75,6 +75,12 @@ let prefacefirstgermanFooter = {
 exports.sections = [
   [prefacefrench, prefacefirstgerman,prefacefirstgermanFooter],
   [commodities],
+  [commodities2],
+  [commodities3],
+  [commodities3],
+  [commodities3],
+  [commodities3],
+
 
 
 

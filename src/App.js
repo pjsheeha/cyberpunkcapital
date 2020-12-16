@@ -40,7 +40,7 @@ function App() {
       
       </div>
     </section>
-    <footer className="l-footer--flat">
+    <footer className="l-footer__platforms">
       <div className = "l-content">
         <div>
           <ul className="l-footer__top-nav wide__platforms">

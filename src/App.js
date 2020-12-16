@@ -35,7 +35,7 @@ function App() {
       <div className="wrapper">
       <h1>CYBERPUNK 2077 – END USER LICENCE AGREEMENT</h1>
       <span class="ua__last-update">Last updated: December 10, 2020</span>
-      <p class="ua__text">Uh Ho and thanks for your interest in Cyberpunk 2077! We have created this Agreement to explain what you can (and cannot) do with Cyberpunk 2077. We put it together as simply as we can legally, with some informal short summaries to help you understand what it means. The short summaries on the right have been handled by a Night City native, a real cyberpunk who knows what’s what when it comes to translating legal-speak. But, just so you know, it’s the full text on the left that’s important/legally binding.</p>
+      <p class="ua__text">Uh WHo and thanks for your interest in Cyberpunk 2077! We have created this Agreement to explain what you can (and cannot) do with Cyberpunk 2077. We put it together as simply as we can legally, with some informal short summaries to help you understand what it means. The short summaries on the right have been handled by a Night City native, a real cyberpunk who knows what’s what when it comes to translating legal-speak. But, just so you know, it’s the full text on the left that’s important/legally binding.</p>
       <div class="ua__item"><div class="ua__item-content"><div class="ua__item-content-left"><h6 class="ua__item-column-title">FULL TEXT</h6></div><div class="ua__item-content-right"><h6 class="ua__item-column-title">QUICK SUMMARY</h6></div></div></div>
       
       </div>

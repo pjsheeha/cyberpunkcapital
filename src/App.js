@@ -13,6 +13,7 @@ function App() {
 //TODO:
 //Make Select a Chapter -> Select a section, allows user to select a section in their chapter
 //Save chapter Progression-> autoputs you on the chosen chapter based on the user's local storage
+//Save Section
 
 
   const [theme, themeToggler,mountedComponent] = useDarkMode();
@@ -57,7 +58,7 @@ function App() {
       <div className="wrapper">
       <h1>CYBERPUNK CAPITAL</h1>
       <span class="ua__last-update">Last updated: December 21, 2020</span>
-      <p class="ua__text">Welcome and thanks for your interest in Cyberpunk Capital! Karl Marx created Capital Volume 1 to explain commodities, the value-form, and capitalist production. We have it, here, together, as simply as we could organize it, with some informal short summaries to help you understand what it means. The short summaries on the right have been handled by Johnny Silverhand, a Rockerboy, a real cyberpunk who knows what’s what when it comes to translating disgust-at-capitalism. But, just so you know, it’s the full text on the left that’s important/well thought out. </p>
+      <p class="ua__text">Welcome and thanks for your interest in Cyberpunk Capital! Karl Marx created Capital Volume 1 to explain commodities, the value-form, and capitalist production. We have it, here, together, as simply as we could organize it, with some informal short summaries to help you understand what it means. The short summaries on the right have been handled by Johnny Silverhand, a Rockerboy, a real cyberpunk who knows what’s what when it comes to translating disgust-at-capitalism. But, just so you know, it’s the full text on the left that’s important/well thought out. <sub>Note: This is not corpo approved and we are not endorsed or affiliated with CDProjektRed.</sub>  </p>
       <div class="ua__item"><div class="ua__item-content"><div class="ua__item-content-left"><h6 class="ua__item-column-title">FULL TEXT</h6></div><div class="ua__item-content-right"><h6 class="ua__item-column-title">QUICK SUMMARY</h6></div></div></div>
       
       </div>

@@ -1,11 +1,18 @@
 import logo from './images/logo.png';
 import logo2 from './images/logo2.png';
-
+import {ThemeProvider} from "styled-components";
+import { GlobalStyles } from "./globalStyles";
+import { lightTheme, darkTheme } from "./Themes"
 import './App.css';
+import  {useDarkMode} from "./useDarkMode";
+
 import React, {useState,useRef, useEffect} from 'react';
 import sections from './chapters';
 import SwitchExample from './Switch';
 function App() {
+  const [theme, themeToggler,mountedComponent] = useDarkMode();
+
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
   const [elem, setElem]= useState(0);
   const chapters = sections.sections;
   const [darkMode, setdarkMode] = useState(false);
@@ -27,20 +34,20 @@ function App() {
 
     };
   }, []);
-  function changeDarkMode(){
-    setdarkMode(!darkMode);
-    console.log(darkMode);
-
-  }
+  if(!mountedComponent) return <div/>
   return (
+    <ThemeProvider theme={themeMode}>
+      <>
+      <GlobalStyles/>
     <div>
+      
       <div className={`sticky-wrapper${isSticky ? ' sticky' : ''}`} ref={ref}>
 
-        <div ><ul className="sticky-inner"><li><SwitchExample onChange={()=>{changeDarkMode()}} color={'#777214'}/></li><li>{chapters[elem][0].title}</li><li><a href="#chapters" class="grey">Select a Chapter</a></li></ul></div>
+        <div ><ul className="sticky-inner"><li><SwitchExample on = {theme!=='light'}onChange={()=>{themeToggler()}} color={'#777214'}/></li><li>{chapters[elem][0].title}</li><li><a href="#chapters" class="grey">Select a Chapter</a></li></ul></div>
   
 </div>
     <section className="ua__content">
-        <img src={darkMode?logo2:logo} className="App-logo" alt="Cyberpunk Capital V.1" />
+        <img src={theme==='dark'?logo2:logo} className="App-logo" alt="Cyberpunk Capital V.1" />
 
       <div className="wrapper">
       <h1>CYBERPUNK 2077 – END USER LICENCE AGREEMENT</h1>
@@ -87,6 +94,8 @@ function App() {
     </footer>
     
     </div>
+    </>
+    </ThemeProvider>
     
   );
 }

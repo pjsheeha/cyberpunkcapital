@@ -162,7 +162,7 @@ let chap1footnotes = {
 
 exports.sections = [
   [prefacefrench, prefacefirstgerman,prefacefirstgermanFooter],
-  [chap1sect1,chap1sect2,  chap1sect3, chap1sect3A,chap1sect3B,chap1sect3C,chap1sect3D, chap1sect4,chap1footnotes],
+  //[chap1sect1,chap1sect2,  chap1sect3, chap1sect3A,chap1sect3B,chap1sect3C,chap1sect3D, chap1sect4,chap1footnotes],
 
 
 

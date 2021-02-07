@@ -8,9 +8,7 @@ import {
   useParams
 } from "react-router-dom";
 function Chap0(){
-  let { id } = useParams();
 
-  console.log(id);
   return (
 
     <ChapPage myUrl={0}></ChapPage>

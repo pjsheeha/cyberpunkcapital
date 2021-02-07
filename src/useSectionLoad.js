@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Route, Switch, Link, Redirect, useLocation } from 'react-router-dom';
 import  {useChapterLoad} from "./useChapterLoad";
 
-export const useSectionLoad = () => {
+export function useSectionLoad (curr) {
     const [section, setSection] = useState(0);
     const [savedBefore, setSavedBefore] = useState(false);
     const { pathname } = useLocation();
@@ -38,9 +38,21 @@ export const useSectionLoad = () => {
             localSaved && setSavedBefore(localSaved);
 
 
+            if (parseInt(curr) !== parseInt(localChapter)){
+                console.log("OO"+curr);
+
+                console.log("PP"+localChapter);
+                localSection && setSection(0);
+            }
+            else{
+                localSection && setSection(localSection);
+
+            }
+
+            
+
 
             // if (pathname.slice(6) === localChapter.toString()){
-            localSection && setSection(localSection);
             //localSection && setSection(0);
 
             // }

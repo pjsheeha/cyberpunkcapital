@@ -24,6 +24,13 @@ export const GlobalStyles = createGlobalStyle`
 
     transition: all 0.50s linear;
   }
+
+  .up {
+    background-color: transparent;
+    color: ${({ theme }) => theme.black};
+
+    transition: all 0.50s linear;
+  }
   .yellow {
     
     color: ${({ theme }) => theme.yellow};
@@ -97,6 +104,23 @@ export const GlobalStyles = createGlobalStyle`
 
   }
   .dropbtn {
+    background-color: transparent;
+    color: ${({ theme }) => theme.black};
+    font-size: 16px;
+    border: none;
+    transition: all 0.50s linear;
+
+  }
+  .down {
+    background-color: transparent;
+    color: ${({ theme }) => theme.black};
+    font-size: 16px;
+    border: none;
+    transition: all 0.50s linear;
+    rotate(180);
+
+  }
+  .collapse {
     background-color: transparent;
     color: ${({ theme }) => theme.black};
     font-size: 16px;

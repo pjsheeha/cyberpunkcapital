@@ -22,6 +22,12 @@
   top:1.5px;
   color:white;
 }
+.image-logic{
+  position:relative;
+  height:50px;
+
+  max-width:20px;
+}
   .sticky-wrapper {
     position: absolute;
    margin:auto;
@@ -101,6 +107,7 @@ pre{
 a{
   background-color:initial
 }
+
 .save-button {
 font-size: 18px;
 font-weight: bolder;
@@ -252,6 +259,14 @@ font-weight: bolder;
             h2.center {
               text-align:center;
             }
+            h3.center {
+              text-align:center;
+              height:50px;
+
+
+            }
+
+
             h6.title {
               max-width:500px;
             }

@@ -226,7 +226,7 @@ const notify3 = (newSect) => toast(<p>Save-state successful </p>);
           </ul>
           <ul className="l-footer__logos" id ="chapters">
           
-          {chapters.map((chap,index)=><li> <Link className = "l-footer_button-present"  to={"/cyberpunkcapital/chap-"+(index) + "#top"} onClick= {()=>{notifSave(0);}} ><h2 className={ elem === index?'faded-yellow':'yellow'}>{Capitalize(chap[0].title)}</h2></Link></li>)}
+          {chapters.map((chap,index)=><li> <Link className = "l-footer_button-present"  to={"/chap-"+(index) + "#top"} onClick= {()=>{notifSave(0);}} ><h2 className={ elem === index?'faded-yellow':'yellow'}>{Capitalize(chap[0].title)}</h2></Link></li>)}
           </ul>
           <ul className="l-footer__links">
             <li><a className = "yellow" target="_blank"href="https://paypal.me/pools/c/8vbGkmm37Q">send a tip!</a></li>
@@ -256,7 +256,7 @@ const notify3 = (newSect) => toast(<p>Save-state successful </p>);
     <ToastContainer closeOnClick={false} onClick={(e) => {
       e.preventDefault();
       console.log(chapters[elem][subelem].name);
-      window.location.href=pathname+'#'+chapters[elem][subelem].name;
+      window.location.href=process.env.PUBLIC_URL+'#'+chapters[elem][subelem].name;
       }} />
 
       </div>

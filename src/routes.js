@@ -28,9 +28,10 @@ const Main = () => {
     <Router>
       <div>
     <Switch> {/* The Switch decides which component to show based on the current URL.*/}
-      <Route  path='/cyberpunkcapital/' component={MainPage}></Route>
-<Route  path='/cyberpunkcapital/chap-0' component={Chap0}></Route>
+    <Route  path='/cyberpunkcapital/chap-0' component={Chap0}></Route>
       <Route  path='/cyberpunkcapital/chap-1' component={Chap1}></Route> 
+      <Route  path='/' component={MainPage}></Route>
+
 
     </Switch>
     </div>

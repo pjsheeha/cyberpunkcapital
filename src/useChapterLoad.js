@@ -20,13 +20,13 @@ export const useChapterLoad = () => {
     useEffect(() => {
         console.log(pathname);
         const localChapter = window.localStorage.getItem('chapter');
-        if (pathname !== "/"){
-            console.log(pathname.slice(6));
-            setChapter(chapters[Math.min(parseInt(pathname.slice(6)),chapters.length-1)]);
-        }
-        else {
+        // if (pathname !== "/"){
+        //     console.log(pathname.slice(6));
+        //     setChapter(chapters[Math.min(parseInt(pathname.slice(6)),chapters.length-1)]);
+        // }
+        // else {
         localChapter && setChapter(localChapter)
-        }
+        
         setMountedComponentChapter(true)
 
     }, []);

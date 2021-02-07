@@ -138,7 +138,7 @@ const notify3 = (newSect) => toast(<p>Save-state successful </p>);
 
   useEffect(() => {
     if (mountedComponentChapter){
-      sB4 && (pathname==="/" || pathname.slice(6)===elem.toString())?notify(): notify2()
+      sB4?notify(): notify2()
       
     };
   }, [mountedComponentChapter]);

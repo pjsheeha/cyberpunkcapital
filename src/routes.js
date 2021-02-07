@@ -25,17 +25,15 @@ import Chap1 from './Chap1';
 const Main = () => {
 
   return (
-    <Router>
       <div>
     <Switch> {/* The Switch decides which component to show based on the current URL.*/}
-    <Route  path='/cyberpunkcapital/chap-0' component={Chap0}></Route>
-      <Route  path='/cyberpunkcapital/chap-1' component={Chap1}></Route> 
-      <Route  path='/' component={MainPage}></Route>
+    <Route  path='/cyberpunkcapital/chap-0' ><Chap0/></Route>
+      <Route  path='/cyberpunkcapital/chap-1' ><Chap1/></Route> 
+      <Route  path='/' ><MainPage/></Route>
 
 
     </Switch>
     </div>
-    </Router>
 
   );
 }

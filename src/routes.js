@@ -23,16 +23,19 @@ import Chap1 from './Chap1';
  */
 
 const Main = () => {
-
+  console.log(process.env.PUBLIC_URL);
   return (
       <div>
+          <Router basename={process.env.PUBLIC_URL}>
+
     <Switch> {/* The Switch decides which component to show based on the current URL.*/}
-    <Route  path='/cyberpunkcapital/chap-0' ><Chap0/></Route>
-      <Route  path='/cyberpunkcapital/chap-1' ><Chap1/></Route> 
+    <Route  path='/chap-0' ><Chap0/></Route>
+      <Route  path='/chap-1' ><Chap1/></Route> 
       <Route  path='/' ><MainPage/></Route>
 
 
     </Switch>
+    </Router>
     </div>
 
   );

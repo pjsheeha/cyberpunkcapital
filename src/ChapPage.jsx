@@ -218,10 +218,10 @@ const notify3 = (newSect) => toast(<p>Save-state successful </p>);
   
 
           <li className="l-footer__top-nav-cond" id="select-chapter">
-            {chapters[elem-1] ?(  <Link className = "save-button"  to={"/cyberpunkcapital/chap-"+(elem-1) + "#top"} onClick= {()=>{notifSave(0);}}>← Previous Chapter </Link>):(<span className="faded-yellow">...</span>)}
+            {chapters[elem-1] ?(  <Link className = "save-button"  to={"/chap-"+(elem-1) + "#top"} onClick= {()=>{notifSave(0);}}>← Previous Chapter </Link>):(<span className="faded-yellow">...</span>)}
             </li>
             <li className="l-footer__top-nav-cond">
-            {chapters[elem+1]?(  <Link className = "save-button"  to={"/cyberpunkcapital/chap-"+(elem+1) + "#top"} onClick= {()=>{notifSave(0);}} > Next Chapter ></Link>):(<span className="faded-yellow">More coming soon!</span>)}
+            {chapters[elem+1]?(  <Link className = "save-button"  to={"/chap-"+(elem+1) + "#top"} onClick= {()=>{notifSave(0);}} > Next Chapter ></Link>):(<span className="faded-yellow">More coming soon!</span>)}
             </li>
           </ul>
           <ul className="l-footer__logos" id ="chapters">

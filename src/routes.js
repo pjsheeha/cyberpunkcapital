@@ -1,5 +1,11 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams
+} from "react-router-dom";
 
 /**
  * Import all page components here
@@ -17,14 +23,20 @@ import Chap1 from './Chap1';
  */
 
 const Main = () => {
-  return (
-    <Switch> {/* The Switch decides which component to show based on the current URL.*/}
-      <Route exact path='/cyberpunkcapital/' component={MainPage}></Route>
 
-      <Route exact path='/cyberpunkcapital/chap-0' component={Chap0}></Route>
-      <Route exact path='/cyberpunkcapital/chap-1' component={Chap1}></Route>
+  return (
+    <Router>
+      <div>
+    <Switch> {/* The Switch decides which component to show based on the current URL.*/}
+      <Route  path='/:id' component={MainPage}></Route>
+
+      {/* <Route  path='/chap-0' component={Chap0}></Route>
+      <Route  path='/chap-1' component={Chap1}></Route> */}
 
     </Switch>
+    </div>
+    </Router>
+
   );
 }
 

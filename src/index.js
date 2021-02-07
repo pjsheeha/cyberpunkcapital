@@ -9,9 +9,7 @@ import reportWebVitals from './reportWebVitals';
 import routes from './routes';
 
 ReactDOM.render(
-    <BrowserRouter>
-    <App/>
-    </BrowserRouter>,
+    <App/>,
       document.getElementById('root')
 );
 

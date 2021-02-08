@@ -218,15 +218,15 @@ const notify3 = (newSect) => toast(<p>Save-state successful </p>);
   
 
           <li className="l-footer__top-nav-cond" id="select-chapter">
-            {chapters[elem-1] ?(  <Redirect className = "save-button"  to={ "/chap-"+(elem-1) + "#top"} onClick= {()=>{notifSave(0);} } replace>← Previous Chapter </Link>):(<span className="faded-yellow">...</span>)}
+            {chapters[elem-1] ?(  <Link className = "save-button"  to={ "/chap-"+(elem-1) + "#top"} onClick= {()=>{notifSave(0);} } replace>← Previous Chapter </Link>):(<span className="faded-yellow">...</span>)}
             </li>
             <li className="l-footer__top-nav-cond">
-            {chapters[elem+1]?(  <Redirect className = "save-button"  to={ "/chap-"+(elem+1) + "#top"} onClick= {()=>{notifSave(0);}} replace> Next Chapter ></Link>):(<span className="faded-yellow">More coming soon!</span>)}
+            {chapters[elem+1]?(  <Link className = "save-button"  to={ "/chap-"+(elem+1) + "#top"} onClick= {()=>{notifSave(0);}} replace> Next Chapter ></Link>):(<span className="faded-yellow">More coming soon!</span>)}
             </li>
           </ul>
           <ul className="l-footer__logos" id ="chapters">
           
-          {chapters.map((chap,index)=><li> <Redirect className = "l-footer_button-present"  to={"/chap-"+(index) + "#top"} onClick= {()=>{notifSave(0);}} ><h2 className={ elem === index?'faded-yellow':'yellow'}>{Capitalize(chap[0].title)}</h2></Link></li>)}
+          {chapters.map((chap,index)=><li> <Link className = "l-footer_button-present"  to={"/chap-"+(index) + "#top"} onClick= {()=>{notifSave(0);}} ><h2 className={ elem === index?'faded-yellow':'yellow'}>{Capitalize(chap[0].title)}</h2></Link></li>)}
           </ul>
           <ul className="l-footer__links">
             <li><a className = "yellow" target="_blank"href="https://paypal.me/pools/c/8vbGkmm37Q">send a tip!</a></li>

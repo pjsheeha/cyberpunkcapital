@@ -133,7 +133,7 @@ let chap1sect1 = {
     name: 'chap1-sect4',
     header: '1.3.A. The Simple, Isolated, or Accidental Form of Value',
     title: 'Chapter 1: The Commodity',
-    sectHeader: '',
+    sectHeader: '1.3.A The Simple Form of Value',
     text:[
     
     {text:'<p>x commodity A = y commodity B or: x commodity A is worth y commodity B. (20 yards of linen = 1 coat or: 20 yards of linen are worth 1 coat.)</p><p>1.3.A.1 <u>The Two Poles of the Value Expression: Relative Form of Value and Equivalent Form</u></p><p>The secret of all forms of value lies hidden in this Simple form of value.</p><p>The two commodities of different kinds A and B (here linen and coat) obviously play two different roles. The linen expresses its value in the coat; the coat serves as the material in which that value is expressed. The ﬁrst commodity plays an active role, the second a passive one. The value of the ﬁrst commodity is repre-sented as relative value, in other words the commodity is in the relative form of value. The second commodity functions as equiv-alent, in other words it is in the equivalent form. The relative form of value and the equivalent form are two moments which belong together, mutually condition each other, and cannot be separated; but, at the same time, they are mutually exclusive or opposite extremes. They are the two poles of the same expression of value, distributed over the different commodities which this expression of value brings in relation with each other. </p>',

@@ -256,7 +256,7 @@ const notify3 = (newSect) => toast(<p>Save-state successful </p>);
     <ToastContainer closeOnClick={false} onClick={(e) => {
       e.preventDefault();
       console.log(chapters[elem][subelem].name);
-      window.location.href=location.pathname+"#"+chapters[elem][subelem].name;
+      window.location.href=window.location.pathname+"#"+chapters[elem][subelem].name;
       }} />
 
       </div>

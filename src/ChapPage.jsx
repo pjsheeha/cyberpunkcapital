@@ -146,17 +146,17 @@ const notify2 = () => toast(<p>Click a '⎘' next to a section heading to save y
 const notify3 = (newSect) => toast(<p>Save-state successful </p>);
 
   useEffect(() => {
-    if (parseInt(props.myUrl) !== -1){
+    
+    if (parseInt(props.myUrl) !== parseInt(window.localStorage.getItem('chapter'))){
+      console.log(elem);
       chapterChanger(props.myUrl);
-
-    if (parseInt(props.myUrl) !== -1 && parseInt(props.myUrl) !== parseInt(elem)){
-      console.log("reta");
-      chapterChanger(props.myUrl);
-
       sectionChanger(0);
       savedChanger();
+
+
     }
-  }
+
+  
     if (mountedComponentChapter){
 
 
@@ -256,7 +256,7 @@ const notify3 = (newSect) => toast(<p>Save-state successful </p>);
     <ToastContainer closeOnClick={false} onClick={(e) => {
       e.preventDefault();
       console.log(chapters[elem][subelem].name);
-      window.location.href=document.getElementById(chapters[elem][subelem].name);
+      window.location.hash=chapters[elem][subelem].name;
       }} />
 
       </div>

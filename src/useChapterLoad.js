@@ -32,7 +32,7 @@ export function useChapterLoad (curr) {
         // }
         // else {
         if (curr){
-            if (parseInt(curr) !== parseInt(-1)){
+            if (parseInt(curr) !== localChapter){
             console.log(curr);
 
             localChapter && setChapter(curr);

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Route, Switch, Link, Redirect, useLocation } from 'react-router-dom';
 
 export function useChapterLoad (curr) {
-    const chapters = [0,1];
+    const chapters = [0,1,2];
     const [chapter, setChapter] = useState(0);
     const [mountedComponentChapter, setMountedComponentChapter] = useState(false)
     const { pathname } = useLocation();

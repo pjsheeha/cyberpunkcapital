@@ -14,6 +14,8 @@ import MainPage from './MainPage';
 import Chap0 from './Chap0';
 import Chap1 from './Chap1';
 import Chap2 from './Chap2';
+import Chap3 from './Chap3';
+import Chap4 from './Chap4';
 
 
 
@@ -33,6 +35,8 @@ const Main = () => {
     <Route  path='/chap-0' ><Chap0/></Route>
       <Route  path='/chap-1' ><Chap1/></Route> 
       <Route  path='/chap-2' ><Chap2/></Route> 
+      <Route  path='/chap-3' ><Chap3/></Route> 
+      <Route  path='/chap-4' ><Chap4/></Route> 
 
       <Route  path='/' ><MainPage/></Route>
 

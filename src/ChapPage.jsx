@@ -197,7 +197,7 @@ const notify3 = (newSect) => toast(<p>Save-state successful </p>);
 
       <div className="wrapper">
       <h1 >CYBERPUNK CAPITAL</h1>
-      <span class="ua__last-update">Last updated: February 16th, 2021</span>
+      <span class="ua__last-update">Last updated: Apr 2nd, 2022</span>
       <p class="ua__text">Welcome and thanks for your interest in Cyberpunk Capital! Karl Marx created Capital Volume 1 to explain commodities, the value-form, and capitalist production. We have it, here, together, as simply as we could organize it, with some informal short summaries to help you understand what it means. The short summaries on the right have been handled by Johnny Silverhand, a Rockerboy, a real cyberpunk who knows what’s what when it comes to translating disgust-at-capitalism. But, just so you know, it’s the full text on the left that’s important/well thought out. This version of Capital Volume 1 was translated by Hans Ehrbar. <sub>Note: This is not corpo approved and we are not endorsed or affiliated with CDProjektRed.</sub>  </p>
       <h2 id="top" className="center">{(chapters[elem][0].title).toUpperCase()}</h2>
       <h2  className="faded-yellow center no-space">――――――――――――</h2>

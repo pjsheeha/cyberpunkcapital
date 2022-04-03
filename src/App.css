@@ -22,6 +22,17 @@
   top:1.5px;
   color:white;
 }
+table{
+  width:100%;
+  font-size:10px;
+}
+tr{
+  padding:5px;
+}
+th{
+  padding:8px;
+  text-align: left;
+}
 .hid{
   position:absolute;
   left:-2000px;

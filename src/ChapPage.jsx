@@ -229,7 +229,7 @@ const notify3 = (newSect) => toast(<p>Save-state successful </p>);
           {chapters.map((chap,index)=><li> <Link className = "l-footer_button-present"  to={"/chap-"+(index) + "#top"} onClick= {()=>{notifSave(0);}} ><h2 className={ elem === index?'faded-yellow':'yellow'}>{Capitalize(chap[0].title)}</h2></Link></li>)}
           </ul>
           <ul className="l-footer__links">
-            <li><a className = "yellow" target="_blank"href="https://paypal.me/pools/c/8vbGkmm37Q">send a tip!</a></li>
+            <li><a className = "yellow" target="_blank"href="https://paypal.me/PSheehan841">send a tip!</a></li>
             <li><a className = "yellow" target="_blank"href="https://perebite.com/">my other stuff</a></li>
             <li><a className = "yellow" target="_blank"href="https://www.instagram.com/cyberpunk.capital/">insta</a></li>
             <li><a className = "yellow" target="_blank"href="https://twitter.com/cyberpunkapital/">twitter</a></li>
